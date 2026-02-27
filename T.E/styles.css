@@ -1,5 +1,19 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(39, 39, 48);
+    color:azure;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 button{
@@ -9,6 +23,7 @@ button{
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    text-align: center
 }
 button:hover{
     background-color: rgb(34, 30, 79);
@@ -18,11 +33,12 @@ button:hover{
     font-size: 16px;
     cursor: pointer;
     opacity: 0.8;
+    text-align: center
 }
 textarea{
-    background-color: rgb(95, 93, 127);
-    color: rgb(76, 69, 117);
-    border: 1px solid rgb(0, 92, 121);
+    background-color: rgb(217, 216, 224);
+    color: rgb(29, 25, 51);
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px;
     font-size: 16px;
     width: 100%;
@@ -34,4 +50,15 @@ h1{
      font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
+}
+span{
+    color: rgb(21, 0, 255);}
+
+p{
+    color: white;
+    text-align: center;
+     font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+
 }
