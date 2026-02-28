@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 let botao = document.querySelector("button");
 console.log(botao);
 
@@ -7,3 +8,4 @@ function criar(){
 botao.addEventListener("click", criar);
 let textoUsuario= document.querySelector("textarea");
 console.log(textoUsuario.value);
+});
