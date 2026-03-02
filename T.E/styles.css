@@ -1,11 +1,11 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
+body {
     background: #09090b;
     color: #e4e4e7;
     padding: 20px;
@@ -15,7 +15,7 @@ body{
 
 }
 
-button{
+button {
     width: 100%;
     max-width: 640px;
     background: rgb(21, 0, 255);
@@ -28,27 +28,50 @@ button{
     margin-top: 10px;
 }
 
-textarea{
+textarea {
     resize: none;
     width: 100%;
     max-width: 650px;
     padding: 16px;
     border: 1px solid #27272a;
     border-radius: 35px;
-    background: #141419; 
+    background: #141419;
     color: #fafafa;
     outline: none;
     margin: 55px 0px 10px 0px;
 }
-h1{
+
+h1 {
     color: #fafafa;
-   font-size: 40px;
+    font-size: 40px;
     font-weight: bold;
 }
-span{ color: rgb(21, 0, 255);}
 
-p{ color: #71717a;
+span {
+    color: rgb(21, 0, 255);
+}
+
+p {
+    color: #71717a;
     margin: 25px;
+}
 
+suport {
 
-    }
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    background: rgb(21, 0, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.349);
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+}
