@@ -11,7 +11,7 @@
 
 <body>
     <H1> Jordame <span>IA</span></H1>
-    <p style="font-size: 35px;">Qual sua ideia para hoje??</p>
+    <p style="font-size: 35px;">Qual sua ideia para hoje?</p>
     <textarea rows="3" placeholder="Ex: um butão"></textarea>
 
     <button class="myButton" onclick="alterarTexto()"> criar </button>
@@ -23,26 +23,25 @@
         </button>
     </nav>
 
+    <div>
+    <iframe>
+        <p class="content">Aqui aparecerá o resultado da sua ideia</p>
+        <textarea class="wrapper"></textarea>
+    </iframe>
+
+
+    <iframe>
+        <textarea class="content"></textarea>
+    </iframe>
+    </div>
+
+
 
 
 </body>
 
 <style>
-    .wrapper {
-        height: 100vh;
-        overflow-y: auto;
-        font-family: 'Poppins', sans-serif;
-        background: rgb(0, 0, 0);
-        position: relative;
-    }
 
-    .content {
-        padding: 40px;
-    }
-
-    h1 {
-        margin-top: 0;
-    }
 </style>
 
 <script src="scripts.js">
