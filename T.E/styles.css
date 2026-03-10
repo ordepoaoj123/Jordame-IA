@@ -1,5 +1,4 @@
 * {
-
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -7,7 +6,8 @@
 }
 
 body {
-    background: #09090b;
+    background: linear-gradient(to bottom, #031548, #000000, #000000);
+    backdrop-filter: blur(10px);
     color: #e4e4e7;
     padding: 20px;
     display: flex;
@@ -49,7 +49,7 @@ h1 {
 
 span {
     color: rgb(21, 0, 255);
-    box-shadow: 0 4px 10px rgb(21, 0, 255);
+    box-shadow: 0 4px 10px #ffffff
 }
 
 p {
@@ -74,16 +74,9 @@ p {
     right: 20px;
 }
 
-.wrapper {
-    background: #141419;
-    border: 1px solid #27272a;
-    border-radius: 12px;
-    padding: 16px;
-    font-size: 14px;
-    color: rgb(21, 0, 255);
-   box-shadow: 0 4px 10px rgb(21, 0, 255);
-    line-height: 2;
-    overflow: auto;
+div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .content {
@@ -92,10 +85,20 @@ p {
     min-height: 350px;
     border: 1px solid #27272a;
     border-radius: 12px;
-    background: #141419;
+    background-color: #141419;
 }
 
-div {
-    display: flex;
-    justify-content: space-evenly;
+
+.wrapper {
+    background-color: #141419;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 14px;
+    color: rgb(21, 0, 255);
+    box-shadow: 0 4px 10px rgb(21, 0, 255);
+    line-height: 2;
+    overflow: auto;
 }
+
+
