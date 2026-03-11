@@ -10,30 +10,42 @@
 </head>
 
 <body>
-    <H1> Jordame<span>IA</span></H1>
+    <H1> Jordame <span>IA</span></H1>
     <p style="font-size: 35px;">Qual sua ideia para hoje?</p>
     <textarea rows="3" placeholder="Ex: um butão"></textarea>
-    <button class="myButton" onclick="alterarTexto()"> criar </button>
+
+    <button class="myButton" onclick="gerarCodigo()"> criar </button>
 
     <nav>
-        <button class="suport">
+        <button onclick="cliqueiNoBotão()" class="suport">
             <a href="https://wa.me/qr/26R35ZCZOYGMJ1">💬</a>
         </button>
     </nav>
 
     <div>
-        <iframe>
-            <textarea class="content"><p>Aqui aparecerá o resultado da sua ideia</p></textarea>
-        </iframe>
+    <iframe>
+        <p class="content">Aqui aparecerá o resultado da sua ideia</p>
+        <textarea class="wrapper"></textarea>
+    </iframe>
 
-        <iframe>
-            <textarea class="wrapper"><p></p></textarea>
-        </iframe>
+
+    <iframe>
+        <textarea class="content"></textarea>
+    </iframe>
     </div>
+
+
+
+
 </body>
 
-<style class="background"></style>
+<style>
 
-<script src="scripts.js"></script>
+</style>
+
+<script src="scripts.js">
+
+</script>
+
 
 </html>

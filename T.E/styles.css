@@ -7,9 +7,9 @@
 
 body {
     background: linear-gradient(to bottom, #031548, #000000, #000000);
-    backdrop-filter: blur(10px);
+
     color: #e4e4e7;
-    padding: 20px;
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +61,6 @@ p {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-
     background: rgb(21, 0, 255);
     color: rgb(0, 0, 0);
     display: flex;
