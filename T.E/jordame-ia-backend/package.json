@@ -1,0 +1,15 @@
+{
+  "name": "jordame-ia-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^x.x.x",
+    "dotenv": "^x.x.x",
+    "express": "^x.x.x",
+    "openai": "^x.x.x"
+  }
+}

@@ -1,51 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Jordame IA</title>
 </head>
 
 <body>
-    <H1> Jordame <span>IA</span></H1>
-    <p style="font-size: 35px;">Qual sua ideia para hoje?</p>
-    <textarea rows="3" placeholder="Ex: um butão"></textarea>
+    <!-- Cabeçalho principal -->
+    <header>
+        <h1>Jordame <span>IA</span></h1>
+        <p style="font-size: 35px;">Qual sua ideia para hoje?</p>
+    </header>
 
-    <button class="myButton" onclick="gerarCodigo()"> criar </button>
+    <!-- Área do formulário -->
+    <main>
+        <!-- Textarea para o usuário digitar a ideia -->
+        <textarea class="pesquisa" placeholder="Ex: um botão"></textarea>
 
-    <nav>
-        <button onclick="cliqueiNoBotão()" class="suport">
-            <a href="https://wa.me/qr/26R35ZCZOYGMJ1">💬</a>
-        </button>
-    </nav>
+        <!-- Botão para criar algo -->
+        <button class="myButton" onclick="gerarCodigo()">Criar</button>
 
-    <div>
-    <iframe>
-        <p class="content">Aqui aparecerá o resultado da sua ideia</p>
-        <textarea class="wrapper"></textarea>
-    </iframe>
+        <!-- Navegação com link para WhatsApp -->
+        <nav>
+            <!-- Aqui usamos só o link, estilizado como botão via CSS -->
+            <a class="suport" href="https://wa.me/qr/26R35ZCZOYGMJ1" target="_blank" rel="noopener noreferrer" aria-label="Suporte via WhatsApp">💬</a>
+        </nav>
 
+        <!-- Área para mostrar o resultado -->
+        <section>
+            <p>Aqui aparecerá o resultado da sua ideia:</p>
+            <!-- Usamos apenas textarea para entrada/saída de texto -->
+            <textarea class="wrapper" readonly></textarea>
+        </section>
+    </main>
 
-    <iframe>
-        <textarea class="content"></textarea>
-    </iframe>
-    </div>
-
-
-
-
+    <!-- Coloque os scripts no final do body -->
+    <script src="scripts.js"></script>
 </body>
-
-<style>
-
-</style>
-
-<script src="scripts.js">
-
-</script>
-
 
 </html>
