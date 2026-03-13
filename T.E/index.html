@@ -1,55 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jordame IA</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Cabeçalho principal -->
-    <header>
-        <h1>Jordame <span>IA</span></h1>
-        <p style="font-size: 35px;">Qual sua ideia para hoje?</p>
-    </header>
 
-    <!-- Área do formulário -->
-    <main>
-        <!-- Textarea para o usuário digitar a ideia -->
-        <textarea class="pesquisa" placeholder="Ex: um botão"></textarea>
+<header>
+    <h1>Jordame <span>IA</span></h1>
+    <p class="subtitle">Qual sua ideia para hoje?</p>
+</header>
 
-        <!-- Botão para criar algo -->
-        <button class="myButton" onclick="gerarCodigo()">Criar</button>
+<main>
 
-        <!-- Navegação com link para WhatsApp -->
-        <nav>
-            <!-- Aqui usamos só o link, estilizado como botão via CSS -->
-            <a class="suport" href="https://wa.me/qr/26R35ZCZOYGMJ1" target="_blank" rel="noopener noreferrer" aria-label="Suporte via WhatsApp">💬</a>
-        </nav>
+    
+    <section class="input-area">
 
-        <!-- Área para mostrar o resultado -->
-        <section class="resultado-container">
-            <div class="codigo-area">
-                <p>Código gerado:</p>
-                <pre><code class="language-html wrapper-code"></code></pre>
-                <button class="copy-btn" onclick="copiarCodigo()">Copiar Código</button>
-            </div>
-            <div class="preview-area">
-                <p>Preview do resultado:</p>
-                <iframe class="preview" id="previewFrame"></iframe>
-            </div>
-        </section>
-    </main>
+        <textarea
+            class="pesquisa"
+            placeholder="Ex: um quadrado"
+        ></textarea>
 
-    <!-- Coloque os scripts no final do body -->
-    <script src="scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+        <button class="myButton">
+            Criar
+        </button>
+
+    </section>
+
+
+    
+    <section class="resultado-container">
+
+        
+        <div class="codigo-area">
+
+            <p>Código gerado:</p>
+
+            <pre>
+<code class="language-html wrapper-code"></code>
+            </pre>
+
+            <button class="copy-btn">
+                Copiar Código
+            </button>
+
+        </div>
+
+        <div class="preview-area">
+
+            <p>Preview do resultado:</p>
+
+            <iframe
+                class="preview"
+                id="previewFrame"
+                title="Preview do código gerado">
+            </iframe>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<nav>
+    <a
+        class="suport"
+        href="https://wa.me/qr/26R35ZCZOYGMJ1"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Suporte via WhatsApp"
+    >
+        💬
+    </a>
+</nav>
+
+
+<script src="scripts.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+
 </body>
-
 </html>

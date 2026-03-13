@@ -21,7 +21,7 @@ app.post('/gerar', async (req, res) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.GROQ_API_KEY || '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'}`
+        'Authorization': `Bearer ${process.env.GROQ_API_KEY}`
       },
       body: JSON.stringify({
         messages: [
