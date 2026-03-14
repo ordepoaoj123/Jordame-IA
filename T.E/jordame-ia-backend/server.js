@@ -2,12 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import { config } from 'dotenv';
 
-config(); // carrega variáveis do .env
+config();
 
 const app = express();
 app.use(cors());
-app.use(express.json()); // para entender JSON no corpo das requisições
-
+app.use(express.json()); 
 app.post('/gerar', async (req, res) => {
   try {
     const { prompt } = req.body;
@@ -35,7 +34,6 @@ app.post('/gerar', async (req, res) => {
 
     if (!response.ok) {
       console.error('API falhou, status:', response.status, 'usando resposta mockada personalizada');
-      // Resposta mockada personalizada baseada no prompt
       let mockResponse = '';
       const lowerPrompt = prompt.toLowerCase();
       console.log('Lower prompt:', lowerPrompt);
@@ -166,7 +164,6 @@ ctx.fillStyle = 'red';
 ctx.fillRect(10, 10, 50, 50);
 </script>`;
       } else {
-        // Fallback genérico: cria um div com o prompt como conteúdo
         mockResponse = `<div style="padding: 20px; background-color: lightblue; border-radius: 5px;">
     ${prompt}
 </div>`;
